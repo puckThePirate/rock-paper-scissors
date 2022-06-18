@@ -12,8 +12,11 @@ current.classList.add('current');
 
 let compscore = 0;
 let playscore = 0;
+
 game.remove();
 result.remove();
+scores.remove();
+
 const CompChoice = function() {
     const choice = ["rock", "paper", "scissor"];
     let index = Math.floor(Math.random() * 3);
@@ -74,7 +77,7 @@ const Match = function() {
         current.remove();
         result.remove();
         game.remove();
-        
+
         compscore = 0;
         playscore = 0;
     }
