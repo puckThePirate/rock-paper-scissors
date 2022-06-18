@@ -23,7 +23,8 @@ const CompChoice = function() {
     return choice[index];
 }
 var PlayerChoice = function(e) {
-    const choice = e.target.value;
+    const choice = e.target.alt;
+    console.log(choice);
     Game(choice);
 }
 
